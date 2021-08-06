@@ -1,0 +1,14 @@
+.navbar{
+    
+    background-color: forestgreen;
+    align-items: center;
+    text-align:center;
+    display:justify;
+    height: 60px;
+    width: 100wh;
+    place-items: center;
+    flex: content;
+    background-position: 100vh;
+    
+
+}
