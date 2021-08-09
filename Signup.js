@@ -9,10 +9,9 @@ const Signup=()=>{
     const [university,setUniversity]=useState("");
     const [year,setYear]=useState("");
     const [program,setProgram]=useState("");
-    const[type,setType]=useState("");
     const [gender,setGender]=useState("");
     const[agree,setAgree]=useState("");
-    const{password,setPassword}=useState("");
+    const[password,setPassword]=useState("");
 
     const [loader,setLoader]=useState(false);
     const handleSubmit=(e)=>{
@@ -24,7 +23,6 @@ const Signup=()=>{
          university:university,
          year:year,
          program:program,
-         type:type,
          gender:gender,
          agree:agree,
          password:password,
@@ -42,7 +40,6 @@ const Signup=()=>{
          setUniversity("");
          setYear("");
          setProgram("");
-         setType("");
          setAgree("");
          setGender("");
          setPassword("");
@@ -60,13 +57,7 @@ const Signup=()=>{
                <label>Password:
                    <input className='form-control' type="password"name="password" value={password}onChange={(e)=>setPassword(e.target.value)} required placeholder="input password"></input><br></br>
                </label>
-               <br></br>Signin As:
-               <label>
-               <select className='form-control' name="text" required value={type}onChange={(e)=>setType(e.target.value)}>
-                   <option value="Admin" >admin</option>
-                   <option value="Student">student</option>
-               </select>
-               </label><br></br>
+               <br></br>
                <label>Email:
                    <input className='form-control' type="email" name="email"value={email}onChange={(e)=>setEmail(e.target.value)} required placeholder="example@gmail.com"></input>
                </label><br></br>
