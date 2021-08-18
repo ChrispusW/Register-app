@@ -29,7 +29,7 @@
 }
 .login-text >h2{
    font-family: 'Times New Roman', Times, serif;
-   font-style: italic;
-   color: blue;
+   font-style: bold;
+   color: rgb(255, 0, 242);
 
 }

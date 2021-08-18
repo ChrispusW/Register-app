@@ -1,7 +1,7 @@
 import firebase from "firebase"
 
 
-//configuration keys for  message app
+//configuration keys for  stratcom registration system
 const firebaseConfig = {
   apiKey: "AIzaSyCt7iv40orQWjJ2pJ5ejPqAXjN7jp09RNE",
   authDomain: "stratcom-registration-system.firebaseapp.com",
@@ -28,3 +28,4 @@ const firebaseConfig = {
   //exporting our instances so that we can use them any where in our project
     export {auth,provider};
     export default db;
+  

@@ -31,11 +31,11 @@ import db from "./firebase";
 //export function Contact() {
     return (
         <form className="form-group" onSubmit={handleSubmit}>
-            <h2 signup-text>Contact us </h2>
+            <h2 className="signup-text>Contact us "></h2>
             <label>name:</label>
-            <input className='form-control' placeholder="name"required value={name}onChange={(e)=>setName(e.target.value)}/><br></br>
+            <input className='form-control-auto' placeholder="name"required value={name}onChange={(e)=>setName(e.target.value)}/><br></br>
             <label>Email:</label>
-            <input className='form-control' placeholder="email" required value={email}onChange={(e)=>setEmail(e.target.value)}/><br></br>
+            <input className='form-control-auto' placeholder="email" required value={email}onChange={(e)=>setEmail(e.target.value)}/><br></br>
             <label>Message:<br></br> <textarea placeholder="type here your message"required className="form-control" aria-label="With textarea" value={message}onChange={(e)=>setMessage(e.target.value)}></textarea></label>
         
           <br>
