@@ -1,0 +1,20 @@
+
+.mr-3{
+    height: 300px;
+    width:150vh;
+    align-items: center;
+}
+a{color: rgb(25, 25, 29);text-decoration-style: none;}
+.container-fluid{
+    place-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 60px;
+
+}
+input.button:hover{background-color: rgb(72, 139, 51);}
+.myslides{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10vh;
+}

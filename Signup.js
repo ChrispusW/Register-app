@@ -2,6 +2,8 @@
 import React,{ useState,useEffect} from "react"
 import db from "./firebase";
 import "./Signup.css"
+import {toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 //function to register a user
 const Signup=()=>{
     const [name,setName]=useState("");
@@ -29,7 +31,7 @@ const Signup=()=>{
         })
          .then(()=> {
              setLoader(false);
-             alert("you have registered successfully");
+             alert("your login information has been submitted successfully, you can access your account");
          })
          .catch((error)=>{
              alert(error.message);
@@ -43,23 +45,24 @@ const Signup=()=>{
          setAgree("");
          setGender("");
          setPassword("");
+         toast.success('You have registered succesfully',{position:toast.POSITION.TOP_CENTER}) 
     };
 //export function Signup() {
     return (
         <div className="Signup-container">
             
-           <form class="form " onSubmit={handleSubmit}>
-               <h4 className="signup-text">Register with stratcom</h4>
+           <form className="form-group" onSubmit={handleSubmit}>
+               <h4 className="signup-text">Register with stratcom <i className="fas fa-user-tie"></i></h4>
                 
                 <label>Name:
-                   <input className='form-control' type="text"name="name" value={name}onChange={(e)=>setName(e.target.value)} required placeholder="name"></input><br></br>
+                   <input className='form-control-auto' type="text"name="name" value={name}onChange={(e)=>setName(e.target.value)} required placeholder="name"></input><br></br>
                </label><br></br>
                <label>Password:
-                   <input className='form-control' type="password"name="password" value={password}onChange={(e)=>setPassword(e.target.value)} required placeholder="input password"></input><br></br>
+                   <input className='form-control-auto' type="password"name="password" value={password}onChange={(e)=>setPassword(e.target.value)} required placeholder="input password"></input><br></br>
                </label>
                <br></br>
                <label>Email:
-                   <input className='form-control' type="email" name="email"value={email}onChange={(e)=>setEmail(e.target.value)} required placeholder="example@gmail.com"></input>
+                   <input className='form-control-auto' type="email" name="email"value={email}onChange={(e)=>setEmail(e.target.value)} required placeholder="example@gmail.com"></input>
                </label><br></br>
                <label>Gender:
                    <input type="radio"name="gender"value={gender}onChange={(e)=>setGender(e.target.value)}></input><label>Female</label>
@@ -68,13 +71,13 @@ const Signup=()=>{
                <br>
                </br>University:
                <label>
-                   <input className='form-control' type="text"name="school" value={university}onChange={(e)=>setUniversity(e.target.value)}required placeholder="university"></input>
+                   <input className='form-control-auto' type="text"name="school" value={university}onChange={(e)=>setUniversity(e.target.value)}required placeholder="university"></input>
                </label><br></br>
                <label >Year of study
-                   <input className='form-control' type="text" name="year of study"value={year}onChange={(e)=>setYear(e.target.value)} required placeholder="eg year 2"></input>
+                   <input className='form-control-auto' type="text" name="year of study"value={year}onChange={(e)=>setYear(e.target.value)} required placeholder="eg year 2"></input>
                </label><br></br>
                <label >Course/Program
-                   <input className='form-control' type="text" name="Course"value={program}onChange={(e)=>setProgram(e.target.value)} required placeholder="Bist"></input>
+                   <input className='form-control-auto' type="text" name="Course"value={program}onChange={(e)=>setProgram(e.target.value)} required placeholder="Bist"></input>
                </label>
                <br></br>
                <div><label>

@@ -1,13 +1,21 @@
-.form-group{
-    padding: 100px;
+
+.media{
     text-align: center;
+    background-color: rgb(139, 133, 133);
+    
+
+}
+
+.signup{
     background-color: white;
-    border-radius: 10px;
-    box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.3);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
 }
 input:focus {
-    background-color: rgb(153, 153, 127);
-    color: rgb(187, 101, 101);
+    background-color: yellow;
+    color: brown;
 }
 input:hover{
     background-color: orange;color: #f4f4f4;
@@ -15,7 +23,7 @@ input:hover{
 input{
     border: 2px; color: green;padding: 5px;
 }
-input[type=text],input[type=password],input[type=email]{
+input[type=text] {
   width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -33,7 +41,7 @@ textarea {
   background-color: #f8f8f8;
   resize: none;
 }
-input[type=button], input[type=submit], input[type=reset]{
+input[type=button], input[type=submit], input[type=reset] {
   background-color: #4CAF50;
   border: 1px;
   color: white;
@@ -44,4 +52,8 @@ input[type=button], input[type=submit], input[type=reset]{
   border: 2px solid blue;
   border-radius: 10px
 }
-input.button:hover{background-color: rgb(43, 122, 85);}
+input.button:hover{background-color: orange;}
+.form-group{
+  background: url("C:\Users\BITAGASE_BLSA\Desktop\Register\register-app\src\imgage.jpg");
+ border-bottom-left-radius: initial;
+}

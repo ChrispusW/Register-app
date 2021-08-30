@@ -18,7 +18,7 @@ import db from "./firebase";
          message:message,})
          .then(()=> {
              setLoader(false);
-             alert("your message has been submitted successfully");
+             alert("your message has been submitted successfully we shall give you a feedback");
          })
          .catch((error)=>{
              alert(error.message);
@@ -31,16 +31,19 @@ import db from "./firebase";
 //export function Contact() {
     return (
         <form className="form-group" onSubmit={handleSubmit}>
-            <h2 className="signup-text>Contact us "></h2>
+            <h2 className="form-group1"> contact us <i class="fas fa-comments"></i></h2>
             <label>name:</label>
-            <input className='form-control-auto' placeholder="name"required value={name}onChange={(e)=>setName(e.target.value)}/><br></br>
+            <input type="text" className='form-control-auto' placeholder="name"required value={name}onChange={(e)=>setName(e.target.value)}/><br></br>
             <label>Email:</label>
-            <input className='form-control-auto' placeholder="email" required value={email}onChange={(e)=>setEmail(e.target.value)}/><br></br>
+            <input  type="email"className='form-control-auto' placeholder="email" required value={email}onChange={(e)=>setEmail(e.target.value)}/><br></br>
             <label>Message:<br></br> <textarea placeholder="type here your message"required className="form-control" aria-label="With textarea" value={message}onChange={(e)=>setMessage(e.target.value)}></textarea></label>
         
           <br>
           </br> <button className='btn btn-primary' type="submit">submit</button>
+          <p>Let us know about your problem. you can visit us at our premises.</p>
+          <strong>Thank you for choosing stratcom communications computer solutions</strong>
         </form>
+        
     )
 }
 

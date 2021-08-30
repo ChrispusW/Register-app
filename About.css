@@ -1,0 +1,15 @@
+.about{
+    display:-ms-grid;
+    place-items: center;
+    
+    
+}
+.list-unstyled{
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+    background-attachment: local;
+    background-color: lightgreen;
+    border-radius: 6px;
+   
+}
